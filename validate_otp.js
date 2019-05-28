@@ -1,7 +1,7 @@
 function validateOTP() {
     var gatepassOTP = document.getElementById("gatepassOTP").value
 
-    var url = new URL("http://localhost:8080/secure-gate-pass/inventory//validate-gatepass?otp=383645")
+    var url = new URL("https://secure-gate-pass-new.cfapps.io/secure-gate-pass/inventory//validate-gatepass?otp=383645")
     url.searchParams.set('otp', gatepassOTP)
     console.log(url)
 
